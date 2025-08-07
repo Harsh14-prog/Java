@@ -1,4 +1,4 @@
-package BinarySearch;
+package BinarySearch.Easy;
 
 public class searchInsert {
     public static void main(String[] args) {

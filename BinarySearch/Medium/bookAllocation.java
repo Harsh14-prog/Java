@@ -34,8 +34,6 @@ public class bookAllocation {
         int[] books = {12, 34, 67, 90};
         int students = 2 ;
 
-        int n = books.length ;
-
         int l = Arrays.stream(books).max().getAsInt();  // for 1st if condn , 1 student should get 1 whole book
         int h = Arrays.stream(books).sum();
 
@@ -43,7 +41,9 @@ public class bookAllocation {
 
         while (l <= h){
 
-            int mid = l + (h-l)/2 ;
+            int mid = l + (h-l)/2 ;  // mid is your current "limit" or guess for the max pages a student can be assigned.
+            // no student can get more than mid pages as we have conasidered as max
+            // Can we assign books to all students such that no single student gets more than mid pages?
 
             boolean ans1 = isAllocate(books , mid , students);
 

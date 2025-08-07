@@ -1,6 +1,6 @@
-package BinarySearch;
+package BinarySearch.Easy;
 
-public class FirstAndLastOccur {
+public class totalOccuranceOfTarget {
 
     public static int findFirst(int[] nums, int target) {
         int l = 0, h = nums.length - 1;
@@ -11,7 +11,7 @@ public class FirstAndLastOccur {
 
             if (nums[mid] == target) {
                 first = mid;
-                h = mid - 1; // continue searching left part
+                h = mid - 1;
             } else if (nums[mid] < target) {
                 l = mid + 1;
             } else {
@@ -31,7 +31,7 @@ public class FirstAndLastOccur {
 
             if (nums[mid] == target) {
                 last = mid;
-                l = mid + 1; // continue searching right part
+                l = mid + 1;
             } else if (nums[mid] < target) {
                 l = mid + 1;
             } else {
@@ -49,7 +49,11 @@ public class FirstAndLastOccur {
         int first = findFirst(nums, target);
         int last = findLast(nums, target);
 
-        System.out.println("First Occurrence: " + first);
-        System.out.println("Last Occurrence: " + last);
+        int totalOccurrences = 0;
+        if (first != -1 && last != -1) {
+            totalOccurrences = last - first + 1;
+        }
+
+        System.out.println("Total Occurrences of " + target + ": " + totalOccurrences);
     }
 }
