@@ -6,7 +6,6 @@ import java.util.Queue;
 public class reverse {
 
     public static void qreverse(Queue <Integer> q){
-       int size = q.size();
 
        if (q.isEmpty()){
         return ;
