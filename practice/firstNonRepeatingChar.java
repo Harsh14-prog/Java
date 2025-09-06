@@ -1,4 +1,4 @@
-package String;
+package practice;
 
 public class  firstNonRepeatingChar{
    public static void main(String[] args) {
@@ -20,3 +20,4 @@ public class  firstNonRepeatingChar{
      }
    } 
 }
+
