@@ -18,7 +18,7 @@ public class bookAllocation {
                 bookPages = bookPages + books[i];
             }
             else {
-                studentCount++ ;
+                studentCount++ ;  // means next student allocation of pages started
                 bookPages = books[i];
             }
         }

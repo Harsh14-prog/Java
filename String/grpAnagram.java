@@ -36,7 +36,7 @@ public class grpAnagram {
 
     public static void main(String[] args) {
 
-        String[] words = { "eat", "tea", "tan", "ate", "nat", "bat" };
+        String[] words = {       };
         List<List<String>> ans = groupOfAnagram(words);
 
         System.out.println(ans);

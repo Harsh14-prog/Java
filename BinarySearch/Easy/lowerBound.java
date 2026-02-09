@@ -13,7 +13,7 @@ public class lowerBound {
 
     while (l <= h){
        
-        int mid = l + (h-1)/2 ;
+        int mid = l + (h-l)/2 ;
 
         if (arr[mid] >= x ){
             ans = mid ;

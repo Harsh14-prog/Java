@@ -16,7 +16,7 @@ public class threeSum {
         int n = arr.length;
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            map.clear();  // important
+            map.clear(); 
             for (int j = i + 1; j < n; j++) {
                 int k = -(arr[i] + arr[j]);
                 if (map.containsKey(k)) {

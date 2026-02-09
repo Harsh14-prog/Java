@@ -23,7 +23,7 @@ public class Leader {
 
         ArrayList<Integer> list = leader(arr);
         
-        Collections.reverse(list);
+        Collections.reverse(list);  // or using 2 pointer approch
         System.out.println(list);
     }
 }

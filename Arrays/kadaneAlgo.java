@@ -25,6 +25,11 @@ public class kadaneAlgo {
             if (sum < 0) {
                 sum = 0;
                 tempstart = i + 1;   // fresh start as sum is negative
+                // this is tempstart , we do not know either this will give max sum
+                // or not after addn with other next ele
+                // if we directly do start + 1 that means we are assuming this start will give 
+                // max sum , but it just start know that +ve number sum
+                // change start only when we get max sum than prev
             }
         }
 

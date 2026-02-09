@@ -23,7 +23,7 @@ public class SubarrayXor {
          if (mp.containsKey(xr ^ k)){
             count = count + mp.get(xr ^ k);
          }
-            mp.put(xr , mp.getOrDefault(xr , 0)+1);
+         mp.put(xr , mp.getOrDefault(xr , 0)+1);
 
       }
       System.out.println(count);
